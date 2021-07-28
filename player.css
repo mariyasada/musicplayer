@@ -1,0 +1,159 @@
+body
+{
+ font-family: cursive;
+}
+*,*::before,*::after
+{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: fantasy;
+}
+.main_div
+{
+ height: 100vh;
+ width: 100vw;
+ background-color: rgb(245, 243, 237);
+ display: grid;
+ place-items: center;
+}
+.music_container
+{
+    width: 35rem; /*350px*/
+    height: 55rem;
+    background-color:#EBB2D6;
+    /*opacity: 1.8;*/
+    border-radius: 2rem; /* 20px*/
+    padding: 3rem; 
+    text-align: center;
+    box-shadow: 0 1.5rem 3rem 0.5rem rgb(107, 102, 102);
+}
+.music_container #title
+{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem; /*2px*/
+    word-spacing: 0.8rem;
+    color:  #766dc1;/*#9f81cd;  #FBd1d3*/
+    margin: 2rem 0 0 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgb(161, 129, 202);
+}
+.music_container #artist
+{
+    color: #7770b8;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    text-shadow: 0 0.1rem 0.3rem rgb(91, 65, 161);;
+}
+.image_container
+{
+    height: 25rem;
+    width: 25rem;
+    margin: auto;
+}
+img{
+ /* make the image object fit and circle*/
+ height: 100%;
+ width: 100%;
+ border-radius: 5%;
+ object-fit: cover;
+ box-shadow: 0 1rem 3rem 0.5rem rgb(238, 140, 238); 
+}
+  .music_controls
+{ 
+    width: 25rem;/*20rem;*/
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 3rem;
+}
+.music_controls .fas
+{
+    color:black;
+    font-size: 2rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgb(165, 159, 159) );
+    
+}
+.music_controls .main_button
+{
+    width:4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-size: 1.5rem;
+    display: flex; /* add display flex to center the icons*/
+    justify-content: center;
+   align-items: center;    
+}
+.music_controls .fas:hover
+{
+    color:rgb(153, 140, 140);
+}
+.music_controls .fa-play:hover
+{
+    color:black;
+    background-color: rgb(241, 237, 237);
+    box-shadow: 0 1.2rem 2rem 0.3rem rgb(138, 132, 132);
+}
+/*progress Style*/
+.progressbar_container
+{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0 ;
+    margin-top: 1rem;
+}
+.progress_div
+{
+    height: 0.5rem;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(36, 35, 35, 0.08),0 2px 4px rgba(36, 35, 35, 0.08),
+    0 4px 8px rgba(36, 35, 35, 0.08), 0 8px 16px rgba(36, 35, 35, 0.08),0 16px 32px rgba(36, 35, 35, 0.08), 0 32px 64px rgba(0, 0, 0, 0.08);
+    border-radius: 4rem;
+    position: relative;
+    margin-top: 0.5rem;
+    transition:  width 1s linear;
+    -moz-transition: width 1s linear;
+    -o-transition: width 1s linear;
+    -webkit-transition: width 1s linear;
+     cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;  
+}
+.progress
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background-color: rgb(71, 66, 122);
+  border-radius: 4rem;
+  /*transition:  width 1s linear;
+  -moz-transition: width 1s linear;
+  -o-transition: width 1s linear;
+  -webkit-transition: width 1s linear;*/
+   cursor: pointer;
+   -webkit-appearance: none;
+    appearance: none;  
+}
+.progress_duration_meter
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    
+}
+
